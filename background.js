@@ -24,7 +24,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
       const response = await fetch('https://api-inference.huggingface.co/models/google/flan-t5-base', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': 'Bearer HuggingFace_API_key',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
