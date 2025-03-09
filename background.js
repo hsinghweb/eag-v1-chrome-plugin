@@ -46,6 +46,9 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
         explanation: explanation
       });
 
+      // Open the popup
+      await chrome.action.openPopup();
+
     } catch (error) {
       console.error('Error:', error);
       await chrome.storage.local.set({
